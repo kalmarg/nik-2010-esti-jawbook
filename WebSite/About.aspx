@@ -8,6 +8,6 @@
         About
     </h2>
     <p>
-        Put content here.
+        Welcome in JawBook.
     </p>
 </asp:Content>
