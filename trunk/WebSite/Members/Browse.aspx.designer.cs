@@ -10,6 +10,6 @@
 namespace WebSite.Members {
     
     
-    public partial class Search {
+    public partial class Browse {
     }
 }

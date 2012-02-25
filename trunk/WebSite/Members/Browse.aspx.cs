@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebSite.Members
 {
-    public partial class Search : System.Web.UI.Page
+    public partial class Browse : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
