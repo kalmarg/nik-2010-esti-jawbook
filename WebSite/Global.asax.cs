@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using Resources;
 
 namespace WebSite
 {
@@ -14,6 +15,18 @@ namespace WebSite
         {
             // Code that runs on application startup
 
+            if (!Roles.RoleExists(Res.Role_Administrator))
+            {
+                Roles.CreateRole(Res.Role_Administrator);
+            }
+            if (Membership.FindUsersByName(Res.User_Administrator).Count == 0)
+            {
+                Membership.CreateUser(Res.User_Administrator, Res.User_Administrator_Password);
+            }
+            if (!Roles.IsUserInRole(Res.User_Administrator, Res.Role_Administrator))
+            {
+                Roles.AddUserToRole(Res.User_Administrator, Res.Role_Administrator);
+            }
         }
 
         void Application_End(object sender, EventArgs e)
