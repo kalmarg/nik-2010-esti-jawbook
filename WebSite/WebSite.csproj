@@ -60,6 +60,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Admins\NOP.aspx" />
     <Content Include="Admins\Races.aspx" />
     <Content Include="Admins\Upload.aspx" />
     <Content Include="Members\Browse.aspx" />
@@ -121,6 +122,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\NOP.aspx.cs">
+      <DependentUpon>NOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\NOP.aspx.designer.cs">
+      <DependentUpon>NOP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\Races.aspx.cs">
       <DependentUpon>Races.aspx</DependentUpon>

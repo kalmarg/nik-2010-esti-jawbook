@@ -22,7 +22,7 @@
                             <asp:Label ID="AgeLabel" runat="server" Text='<%# Eval("Age") %>' />
                             <br />
                             Price:
-                            <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") +" Ft"%>' />
+                            <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") +" EUR"%>' />
                             <br />
                             Race:
                             <asp:Label ID="RaceLabel" runat="server" Text='<%# Eval("Race_Name")%>' /><br />

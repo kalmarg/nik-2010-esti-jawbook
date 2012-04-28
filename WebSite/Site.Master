@@ -40,7 +40,9 @@
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
                         <asp:MenuItem NavigateUrl="~/Members/Browse.aspx" Text="Browse" />
                         <asp:MenuItem NavigateUrl="~/Members/SpecialOffer.aspx" Text="SpecialOffer" />
+                        <asp:MenuItem NavigateUrl="~/Admins/NOP.aspx" Text="NOP" />
                         <asp:MenuItem NavigateUrl="~/Admins/Races.aspx" Text="Races" />
+                        <asp:MenuItem NavigateUrl="~/Admins/NOP.aspx" Text="NOP" />
                         <asp:MenuItem NavigateUrl="~/Admins/Upload.aspx" Text="Upload" />
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
                     </Items>
