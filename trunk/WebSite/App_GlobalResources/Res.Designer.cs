@@ -61,6 +61,16 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Gratulálunk!&lt;br /&gt;
+        ///Sikeresen megrendelted {0}-t, {1}-tól {2} napra. A bérleti díj {3} EUR lesz, amit az átvétel előtti nap kérlek utalj át a 11773140-111222333 számlaszámra.&lt;br /&gt;.
+        /// </summary>
+        internal static string Feedback {
+            get {
+                return ResourceManager.GetString("Feedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to admin.
         /// </summary>
         internal static string Role_Administrator {
