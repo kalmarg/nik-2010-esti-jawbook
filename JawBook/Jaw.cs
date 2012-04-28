@@ -11,7 +11,7 @@ namespace JawBook
 
         public string Name { get; set; }
         public Race Race { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public String Age { get; set; }
         public int Price { get; set; }
 
         public byte[] Picture { get; set; }

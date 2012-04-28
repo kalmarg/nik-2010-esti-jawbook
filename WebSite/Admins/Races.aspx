@@ -4,15 +4,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="gv" runat="server" AllowPaging="True" AllowSorting="True"
-        AutoGenerateColumns="False" DataKeyNames="RaceId" 
-        onpageindexchanged="GridView1_PageIndexChanged" 
-        onpageindexchanging="GridView1_PageIndexChanging" 
-        onrowcancelingedit="GridView1_RowCancelingEdit" 
-        onrowdeleted="GridView1_RowDeleted" onrowdeleting="GridView1_RowDeleting" 
-        onrowediting="GridView1_RowEditing" onrowupdated="GridView1_RowUpdated" 
-        onrowupdating="GridView1_RowUpdating" onsorted="GridView1_Sorted" 
-        onsorting="GridView1_Sorting" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="gv" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False"
+        DataKeyNames="RaceId" OnRowUpdating="gv_RowUpdating" OnRowDeleting="gv_RowDeleting"
+        DataSourceID="SqlDataSource1">
         <Columns>
             <asp:TemplateField ShowHeader="False">
                 <EditItemTemplate>
@@ -48,13 +42,10 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-        ConflictDetection="CompareAllValues" 
-        ConnectionString="<%$ ConnectionStrings:JawBook.DbConnectionString %>" 
-        DeleteCommand="DELETE FROM [Races] WHERE [RaceId] = @original_RaceId AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL))" 
-        InsertCommand="INSERT INTO [Races] ([RaceId], [Name]) VALUES (@RaceId, @Name)" 
-        OldValuesParameterFormatString="original_{0}" 
-        SelectCommand="SELECT * FROM [Races]" 
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues"
+        ConnectionString="<%$ ConnectionStrings:JawBook.DbConnectionString %>" DeleteCommand="DELETE FROM [Races] WHERE [RaceId] = @original_RaceId AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL))"
+        InsertCommand="INSERT INTO [Races] ([RaceId], [Name]) VALUES (@RaceId, @Name)"
+        OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Races]"
         UpdateCommand="UPDATE [Races] SET [Name] = @Name WHERE [RaceId] = @original_RaceId AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_RaceId" Type="Object" />
