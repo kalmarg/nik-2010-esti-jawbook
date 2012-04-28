@@ -40,13 +40,13 @@ namespace WebSite.Admins {
         protected global::System.Web.UI.WebControls.EntityDataSource EntityDataSource1;
         
         /// <summary>
-        /// calBoB control.
+        /// tbAge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calBoB;
+        protected global::System.Web.UI.WebControls.TextBox tbAge;
         
         /// <summary>
         /// tbPrice control.
@@ -74,5 +74,14 @@ namespace WebSite.Admins {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpload;
+        
+        /// <summary>
+        /// lMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lMsg;
     }
 }

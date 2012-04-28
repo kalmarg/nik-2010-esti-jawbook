@@ -6,6 +6,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using Resources;
 using JawBook;
+using System.Data.Entity;
 
 namespace WebSite
 {
@@ -15,6 +16,9 @@ namespace WebSite
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
+
+            Database.SetInitializer<Db>(new DropCreateDatabaseIfModelChanges<Db>());
+
 
             if (!Roles.RoleExists(Res.Role_Administrator))
             {

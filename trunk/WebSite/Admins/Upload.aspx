@@ -29,10 +29,10 @@
         </tr>
         <tr>
             <td>
-                DoB:
+                Age:
             </td>
             <td>
-                <asp:Calendar ID="calBoB" runat="server"></asp:Calendar>
+                <asp:TextBox ID="tbAge" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -57,4 +57,6 @@
             </td>
         </tr>
     </table>
+    <asp:Label ID="lMsg" runat="server" BackColor="#FF6A6A" Visible="False" 
+        ForeColor="Black"></asp:Label>
 </asp:Content>

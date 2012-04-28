@@ -38,7 +38,12 @@
                     IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem NavigateUrl="~/Members/Browse.aspx" Text="Browse" />
+                        <asp:MenuItem NavigateUrl="~/Members/FeedBack.aspx" Text="FeedBack" />
+                        <asp:MenuItem NavigateUrl="~/Members/Rent.aspx" Text="Rent" />
                         <asp:MenuItem NavigateUrl="~/Members/Search.aspx" Text="Search" />
+                        <asp:MenuItem NavigateUrl="~/Members/SpecialOffer.aspx" Text="SpecialOffer" />
+                        <asp:MenuItem NavigateUrl="~/Admins/Races.aspx" Text="Races" />
                         <asp:MenuItem NavigateUrl="~/Admins/Upload.aspx" Text="Upload" />
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
                     </Items>
