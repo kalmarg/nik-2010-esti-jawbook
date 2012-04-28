@@ -17,6 +17,44 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JawBook", "JawBook\JawBook.csproj", "{7F200157-A9A8-44E2-AEDF-FD2FB28DF9A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pics", "pics", "{D10F2229-A57B-48F5-AEE7-0409C563C055}"
+	ProjectSection(SolutionItems) = preProject
+		Pics\0.png = Pics\0.png
+		Pics\10.png = Pics\10.png
+		Pics\11.png = Pics\11.png
+		Pics\12.png = Pics\12.png
+		Pics\13.png = Pics\13.png
+		Pics\14.png = Pics\14.png
+		Pics\15.png = Pics\15.png
+		Pics\16.png = Pics\16.png
+		Pics\17.png = Pics\17.png
+		Pics\18.png = Pics\18.png
+		Pics\19.png = Pics\19.png
+		Pics\20.png = Pics\20.png
+		Pics\21.png = Pics\21.png
+		Pics\22.png = Pics\22.png
+		Pics\23.png = Pics\23.png
+		Pics\24.png = Pics\24.png
+		Pics\25.png = Pics\25.png
+		Pics\26.png = Pics\26.png
+		Pics\27.png = Pics\27.png
+		Pics\28.png = Pics\28.png
+		Pics\29.png = Pics\29.png
+		Pics\3.png = Pics\3.png
+		Pics\30.png = Pics\30.png
+		Pics\31.png = Pics\31.png
+		Pics\32.png = Pics\32.png
+		Pics\33.png = Pics\33.png
+		Pics\34.png = Pics\34.png
+		Pics\35.png = Pics\35.png
+		Pics\4.png = Pics\4.png
+		Pics\5.png = Pics\5.png
+		Pics\6.png = Pics\6.png
+		Pics\7.png = Pics\7.png
+		Pics\8.png = Pics\8.png
+		Pics\9.png = Pics\9.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
