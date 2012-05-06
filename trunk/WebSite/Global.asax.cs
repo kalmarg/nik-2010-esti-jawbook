@@ -18,7 +18,9 @@ namespace WebSite
             // Code that runs on application startup
 
             Database.SetInitializer<Db>(new DropCreateDatabaseIfModelChanges<Db>());
-
+            var db = new Db();
+            var races = db.Races.ToList();
+            races.Clear();
 
             if (!Roles.RoleExists(Res.Role_Administrator))
             {
