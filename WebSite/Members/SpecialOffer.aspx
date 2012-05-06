@@ -8,7 +8,7 @@
     <br />
     Válaszd ki, milyen célra kívánsz magad mellé társat választani. A kattintásodat
     rendszerünk érzékeli és annak apró jeleiből felismerve személyiségedet, a számodra
-    leg megfelelőbb társat fogja ajánlani.<br />
+    legmegfelelőbb társat fogja ajánlani.<br />
     <center>
         <asp:DropDownList ID="ddlTarget" runat="server" 
             onselectedindexchanged="ddlTarget_SelectedIndexChanged" 
